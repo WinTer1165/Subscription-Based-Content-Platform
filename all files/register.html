@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamora | Premium Content Streaming Platform</title>
+    <meta
+      name="description"
+      content="Streamora - Your gateway to premium content streaming. Sign up or log in to access a world of entertainment."
+    />
+    <meta property="og:title" content="Streamora - Premium Content Streaming" />
+    <meta
+      property="og:description"
+      content="Sign up or log in to Streamora and enjoy premium content streaming."
+    />
+    <link rel="icon" type="image/x-icon" href="../images/live-streaming.png" />
+    <link rel="stylesheet" href="../user-css/user-register.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Create an Account</h1>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{11}"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="subscription">Subscription Level:</label>
+          <select id="subscription" name="subscription" required>
+            <option value="">Select a subscription</option>
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="payment">Payment Method:</label>
+          <select id="payment" name="payment" required>
+            <option value="">Select a payment method</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="bkash">bKash</option>
+            <option value="paypal">PayPal</option>
+          </select>
+        </div>
+        <div id="paypal-button-container" style="display: none"></div>
+        <button id="submit-button" type="submit" class="btn"><i class="fas fa-credit-card"></i> Register</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=AVyW4OG0MHFQXaTWMDbW59FLQE2vIcYf-mHbEXr2JesQSA9bm9sUOXJBiuTu4VfGGaCqN0Y1sRqIXoCX&currency=USD"></script>
+    <script src="../user-js/user-register-form.js"></script>
+  </body>
+</html>

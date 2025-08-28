@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamora | Premium Content Streaming Platform</title>
+    <link rel="icon" type="image/x-icon" href="../images/live-streaming.png">
+    <link rel="stylesheet" href="../user-css/user-browse.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          
+          <li><a href="browse.html" class="active">Browse</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+          <li><a href="../php/logout.php">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <input type="text" id="search-box" placeholder="Search for videos..." />
+      <h1>Browse Content</h1>
+      <div id="video-grid" class="video-grid">
+        <!-- Videos will be dynamically added here -->
+      </div>
+    </main>
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+      <span id="close-modal">&times;</span>
+      <video id="video-player" controls>
+        <source id="video-source" src="" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <script src="../user-js/user-browse.js"></script>
+    <script src="../user-js/user-search.js"></script>
+  </body>
+</html>
