@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Premium Content Streaming Platform - Streamora</title>
+    <link rel="icon" type="image/x-icon" href="../images/live-streaming.png">
+    <link rel="stylesheet" href="../admin-css/admin-dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Streamora Admin</h1>
+            <nav>
+                <ul>
+                    <li><a href="../admin/dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="../admin/user.html">Manage Users</a></li>
+                    <li><a href="../admin/contact.php">View Messages</a></li>
+                    <li><a href="../admin/upload.html">Upload Video</a></li>
+                    <li><a href="../php/admin_logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Video Management</h2>
+            <table id="videoTable">
+                <thead>
+                    <tr>
+                        <th>Thumbnail</th>
+                        <th>Title</th>
+                        <th>Subscription Level</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Streamora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../admin-js/admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Video | Premium Content Streaming Platform - Streamora</title>
+    <link rel="icon" type="image/x-icon" href="../images/live-streaming.png">
+    <link rel="stylesheet" href="../admin-css/admin-edit.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Streamora Admin</h1>
+            <nav>
+                <ul>
+                    <li><a href="../admin/dashboard.html">Dashboard</a></li>
+                     <li><a href="../admin/user.html">Manage Users</a></li>
+                     <li><a href="../admin/contact.php">View Messages</a></li>
+                    <li><a href="../admin/upload.html">Upload Video</a></li>
+                    <li><a href="../php/logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Edit Video</h2>
+            <form id="editForm" enctype="multipart/form-data">
+                <input type="hidden" id="video_id" name="video_id">
+                <div class="form-group">
+                    <label for="title">Video Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="subscription_level">Subscription Level</label>
+                    <select id="subscription_level" name="subscription_level" required>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="thumbnail">New Thumbnail Image (optional)</label>
+                    <input type="file" id="thumbnail" name="thumbnail" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label>Current Thumbnail</label>
+                    <img id="currentThumbnail" src="" alt="Current Thumbnail">
+                </div>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Streamora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../admin-js/admin-edit.js"></script>
+</body>
+</html>

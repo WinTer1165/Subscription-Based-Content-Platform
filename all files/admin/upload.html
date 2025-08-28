@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload | Premium Content Streaming Platform - Streamora</title>
+    <link rel="icon" type="image/x-icon" href="../images/live-streaming.png">
+    <link rel="stylesheet" href="../admin-css/admin-upload.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Streamora Admin</h1>
+            <nav>
+                <ul>
+                    <li><a href="../admin/dashboard.html">Dashboard</a></li>
+                    <li><a href="../admin/user.html" >Manage Users</a></li>
+                    <li><a href="../admin/contact.php">View Messages</a></li>
+                    <li><a href="../admin/upload.html" class="active">Upload Video</a></li>
+                    <li><a href="../php/logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Upload New Video</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="title">Video Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="subscription_level">Subscription Level</label>
+                    <select id="subscription_level" name="subscription_level" required>
+                        <option value="">Select a level</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="video_file">Video File</label>
+                    <input type="file" id="video_file" name="video_file" accept="video/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="thumbnail">Thumbnail Image</label>
+                    <input type="file" id="thumbnail" name="thumbnail" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload Video</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Streamora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../admin-js/admin-upload.js"></script>
+</body>
+</html>

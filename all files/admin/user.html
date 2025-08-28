@@ -1,0 +1,54 @@
+<!-- File: user.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | User Management</title>
+    <link rel="stylesheet" href="../admin-css/admin-dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Streamora Admin</h1>
+            <nav>
+                <ul>
+                    <li><a href="../admin/dashboard.html" >Dashboard</a></li>
+                    <li><a href="../admin/user.html" class="active">Manage Users</a></li>
+                    <li><a href="../admin/contact.php">View Messages</a></li>
+                    <li><a href="../admin/upload.html">Upload Video</a></li>
+                    <li><a href="../php/admin_logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2> User Management</h2>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Full Name</th>
+                        <th>Phone</th>
+                        <th>Subscription Level</th>
+                        <th>Payment Method</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be populated here via AJAX -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <?php echo date('Y'); ?> Streamora. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../admin-js/user.js"></script>
+</body>
+</html>
